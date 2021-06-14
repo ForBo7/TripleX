@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F3C1D7912677871B0056C585 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C1D7902677871B0056C585 /* main.cpp */; };
+		F3C1D7912677871B0056C585 /* TripleX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C1D7902677871B0056C585 /* TripleX.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		F3C1D78D2677871B0056C585 /* TripleX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TripleX; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3C1D7902677871B0056C585 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F3C1D7902677871B0056C585 /* TripleX.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TripleX.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		F3C1D78F2677871B0056C585 /* TripleX */ = {
 			isa = PBXGroup;
 			children = (
-				F3C1D7902677871B0056C585 /* main.cpp */,
+				F3C1D7902677871B0056C585 /* TripleX.cpp */,
 			);
 			path = TripleX;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3C1D7912677871B0056C585 /* main.cpp in Sources */,
+				F3C1D7912677871B0056C585 /* TripleX.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
