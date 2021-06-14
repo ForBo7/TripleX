@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F364D8532677AE23000598C6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F3C1D78D2677871B0056C585 /* TripleX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TripleX; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C1D7902677871B0056C585 /* TripleX.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TripleX.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				F3C1D7902677871B0056C585 /* TripleX.cpp */,
+				F364D8532677AE23000598C6 /* .gitignore */,
 			);
 			path = TripleX;
 			sourceTree = "<group>";
