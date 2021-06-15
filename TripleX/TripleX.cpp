@@ -2,7 +2,8 @@
 
 #include <iostream>
 
-void PrintIntroduction() {
+void PrintIntroduction(int LevelDifficulty)
+{
     // Print welcome messages to the terminal.
     std::cout << R"(
     WWWWWWWWWWWWWWWWWWWNX00OOOO00KNWWWWWWWWWWWWWWWWWWW
@@ -31,12 +32,13 @@ void PrintIntroduction() {
     WWWWWWWWWWWWWWWWNX0kdoolllloodk0XNWWWWWWWWWWWWWWWW
     WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
     WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW)" << std::endl << std::endl;
-    std::cout << "You are an agent attempting to disarm a nuclear weapon.\n";
+    std::cout << "You are an agent attempting to disarm a level " << LevelDifficulty << " nuclear weapon.\n";
     std::cout << "\nYou must input the correct 3 number code to prevent the weapon from activating.\n";
 }
 
-bool PlayGame() {
-    PrintIntroduction();
+bool PlayGame(int LevelDifficulty)
+{
+    PrintIntroduction(LevelDifficulty);
     
     // Declare three number code.
     const int CodeA = 7;
@@ -60,22 +62,32 @@ bool PlayGame() {
     int GuessProduct = GuessA * GuessB * GuessC;
     
     // Check if they player's guess is correct.
-    if (GuessSum == CodeSum && GuessProduct == CodeProduct) {
+    if (GuessSum == CodeSum && GuessProduct == CodeProduct)
+    {
         std::cout << "\nYou've disarmed the weapon and saved the day!\n";
         return true;
-    } else {
+    }
+    else
+    {
         std::cout << "\nAnd the weapon activates...\n";
         return false;
     }
 }
 
-int main() {
-    
-    while (true) {
-        bool bLevelComplete = PlayGame();
+int main()
+{
+    int LevelDifficulty = 1;
+    while (true)
+    {
+        bool bLevelComplete = PlayGame(LevelDifficulty);
         std::cin.clear();
         std::cin.ignore();
-    }
         
+        if (bLevelComplete)
+        {
+            ++LevelDifficulty;
+        }
+    }
+		
     return 0;
 }
