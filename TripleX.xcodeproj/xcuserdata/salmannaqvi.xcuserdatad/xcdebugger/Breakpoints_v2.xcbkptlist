@@ -30,9 +30,9 @@
             filePath = "TripleX/TripleX.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "PlayGame()"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "PlayGame(LevelDifficulty)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -46,8 +46,8 @@
             filePath = "TripleX/TripleX.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>

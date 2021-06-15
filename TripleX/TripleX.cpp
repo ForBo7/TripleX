@@ -49,8 +49,10 @@ bool PlayGame(int LevelDifficulty)
     const int CodeProduct = CodeA * CodeB * CodeC;
     
     // Print CodeSum and CodeProduct to the terminal.
-    std::cout << std::endl << "\nThe sum of the three numbers is " << CodeSum << ".\n";
-    std::cout << "The product of the three numbers is " << CodeProduct << ".\n";
+	std::cout << std::endl << "\nThe sum of the three numbers is " << CodeSum;
+	std::cout << ".\n";
+	std::cout << "The product of the three numbers is " << CodeProduct;
+	std::cout << ".\n";
     
     // Store player's guess.
     int GuessA, GuessB, GuessC;
@@ -64,7 +66,7 @@ bool PlayGame(int LevelDifficulty)
     // Check if they player's guess is correct.
     if (GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
-        std::cout << "\nYou've disarmed the weapon and saved the day!\n";
+        std::cout << "\nYou've gained deeper access to the weapon!\n";
         return true;
     }
     else
@@ -77,17 +79,22 @@ bool PlayGame(int LevelDifficulty)
 int main()
 {
     int LevelDifficulty = 1;
-    while (true)
+	int const MaxDifficulty = 5;
+	
+	// Loop game until all levels completed.
+    while (LevelDifficulty <= MaxDifficulty)
     {
         bool bLevelComplete = PlayGame(LevelDifficulty);
-        std::cin.clear();
-        std::cin.ignore();
+        std::cin.clear(); // Clean any errors.
+        std::cin.ignore(); // Discards the buffer.
         
         if (bLevelComplete)
         {
             ++LevelDifficulty;
         }
     }
+	
+	std::cout << "You've disarmed the weapon and have saved the day!\n\n";
 		
     return 0;
 }
