@@ -35,7 +35,7 @@ void PrintIntroduction() {
     std::cout << "\nYou must input the correct 3 number code to prevent the weapon from activating.\n";
 }
 
-void PlayGame() {
+bool PlayGame() {
     PrintIntroduction();
     
     // Declare three number code.
@@ -62,13 +62,20 @@ void PlayGame() {
     // Check if they player's guess is correct.
     if (GuessSum == CodeSum && GuessProduct == CodeProduct) {
         std::cout << "\nYou've disarmed the weapon and saved the day!\n";
+        return true;
     } else {
         std::cout << "\nAnd the weapon activates...\n";
+        return false;
     }
 }
 
 int main() {
-    PlayGame();
     
+    while (true) {
+        bool bLevelComplete = PlayGame();
+        std::cin.clear();
+        std::cin.ignore();
+    }
+        
     return 0;
 }
