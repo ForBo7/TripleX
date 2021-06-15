@@ -1,6 +1,7 @@
 //  Created by Salman Naqvi on 14/06/2021.
 
 #include <iostream>
+#include <ctime>
 
 void PrintIntroduction(int LevelDifficulty)
 {
@@ -41,12 +42,12 @@ bool PlayGame(int LevelDifficulty)
     PrintIntroduction(LevelDifficulty);
     
     // Declare three number code.
-    const int CodeA = 7;
-    const int CodeB = 6;
-    const int CodeC = 5;
+    int const CodeA = rand() % LevelDifficulty + LevelDifficulty;
+    int const CodeB = rand() % LevelDifficulty + LevelDifficulty;
+    int const CodeC = rand() % LevelDifficulty + LevelDifficulty;
     
-    const int CodeSum = CodeA + CodeB + CodeC;
-    const int CodeProduct = CodeA * CodeB * CodeC;
+    int const CodeSum = CodeA + CodeB + CodeC;
+    int const CodeProduct = CodeA * CodeB * CodeC;
     
     // Print CodeSum and CodeProduct to the terminal.
 	std::cout << std::endl << "\nThe sum of the three numbers is " << CodeSum;
@@ -78,6 +79,9 @@ bool PlayGame(int LevelDifficulty)
 
 int main()
 {
+	// Create a new random sequene based on the time of day.
+	srand(time(NULL));
+	
     int LevelDifficulty = 1;
 	int const MaxDifficulty = 5;
 	
@@ -85,13 +89,19 @@ int main()
     while (LevelDifficulty <= MaxDifficulty)
     {
         bool bLevelComplete = PlayGame(LevelDifficulty);
-        std::cin.clear(); // Clean any errors.
-        std::cin.ignore(); // Discards the buffer.
+		// Clean any errors.
+        std::cin.clear();
+		// Discard the buffer.
+        std::cin.ignore();
         
         if (bLevelComplete)
         {
             ++LevelDifficulty;
         }
+		else
+		{
+			LevelDifficulty = 1;
+		}
     }
 	
 	std::cout << "You've disarmed the weapon and have saved the day!\n\n";

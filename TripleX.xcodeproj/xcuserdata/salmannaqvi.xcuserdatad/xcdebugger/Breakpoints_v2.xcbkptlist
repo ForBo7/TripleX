@@ -14,9 +14,9 @@
             filePath = "TripleX/TripleX.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7"
-            endingLineNumber = "7"
-            landmarkName = "PrintIntroduction()"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "PrintIntroduction(LevelDifficulty)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -30,8 +30,8 @@
             filePath = "TripleX/TripleX.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "PlayGame(LevelDifficulty)"
             landmarkType = "9">
          </BreakpointContent>
@@ -46,10 +46,10 @@
             filePath = "TripleX/TripleX.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "main()"
-            landmarkType = "9">
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
