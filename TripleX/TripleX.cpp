@@ -30,5 +30,11 @@ int main() {
     int GuessSum = GuessA + GuessB + GuessC;
     int GuessProduct = GuessA * GuessB * GuessC;
     
+    if (GuessSum == CodeSum && GuessProduct == CodeProduct) {
+        std::cout << std::endl << "You've disarmed the weapon and saved the day!" << std::endl;
+    } else {
+        std::cout << std:: endl << "And the weapon activates..." << std::endl;
+    }
+    
     return 0;
 }
