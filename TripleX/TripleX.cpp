@@ -20,7 +20,15 @@ int main() {
     std::cout << std::endl << "The sum of the three numbers is " << CodeSum << "." << std::endl;
     std::cout << "The product of the three numbers is " << CodeProduct << "." << std::endl;
     
-    int PlayerGuess;
+    int GuessA;
+    int GuessB;
+    int GuessC;
+    std::cout << std::endl << "Enter your guess: ";
+    std::cin >> GuessA >> GuessB >> GuessC;
+    std::cout << "You entered: " << GuessA << GuessB << GuessC << std::endl;
+    
+    int GuessSum = GuessA + GuessB + GuessC;
+    int GuessProduct = GuessA * GuessB * GuessC;
     
     return 0;
 }
